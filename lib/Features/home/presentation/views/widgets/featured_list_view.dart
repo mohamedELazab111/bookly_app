@@ -12,7 +12,10 @@ class FeaturedListView extends StatelessWidget {
         itemCount: 7,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
-          return const FeaturedListViewItem();
+          return const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 8),
+            child: FeaturedListViewItem(),
+          );
         },
       ),
     );

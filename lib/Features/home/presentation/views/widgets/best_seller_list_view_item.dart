@@ -10,13 +10,13 @@ class BestSellerListViewItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsetsGeometry.symmetric(vertical: 8),
+      padding: const EdgeInsetsGeometry.symmetric(vertical: 10),
       child: SizedBox(
         height: 130,
         child: Row(
           children: [
             const FeaturedListViewItem(),
-            const SizedBox(width: 14),
+            const SizedBox(width: 30),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

@@ -6,18 +6,15 @@ class FeaturedListViewItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(right: 16),
-      child: AspectRatio(
-        aspectRatio: 2.4 / 4,
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16),
-            color: Colors.red,
-            image: const DecorationImage(
-              fit: BoxFit.fill,
-              image: AssetImage(AssetsData.imagesTestImage),
-            ),
+    return AspectRatio(
+      aspectRatio: 2.4 / 4,
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(16),
+          color: Colors.red,
+          image: const DecorationImage(
+            fit: BoxFit.fill,
+            image: AssetImage(AssetsData.imagesTestImage),
           ),
         ),
       ),
